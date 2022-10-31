@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="ary()">Ary</button>
+          <button type="button" class="toggle-btn" onclick="rafa()">Rafa</button>
+        </div>
+        <div class="profil">
+          <a class="download" href="tugasPKWU.docx" download>Unduh Proposal Kita</a>
+        </div>
+        <form id="ary" class="input-group">
+          <div class="profil">
+            <img src="profil1.png">
+          </div>
+          <a href="ary\index.html" class="submit-btn">Lihat Profil Ary</a>
+        </form>
+        <form id="rafa" class="input-group">
+          <div class="profil">
+            <img src="profil2.jpg">
+          </div>
+          <a href="rafa\index.html" class="submit-btn">Lihat Profil Rafa</a>
+        </form>
+      </div>
+
+    </div>
+
+    <script type="text/javascript">
+      var x = document.getElementById("ary");
+      var y = document.getElementById("rafa");
+      var z = document.getElementById("btn");
+
+      function rafa() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+
+      function ary() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+
+  </body>
+</html>
