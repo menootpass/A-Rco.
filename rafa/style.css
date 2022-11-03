@@ -3,17 +3,22 @@ html {
     margin: 0;
 }
 .Top {
+    font-size: 30px;
+    color: whitesmoke;
     margin-top: 0px;
 }
-
-.Identity {
-    margin-top: -180px;
-    margin-left: 350px;
-    color: #1b1f24
-}
-
 .Bio {
-    background-color: azure;
+    margin-left:10%;
+}
+.Identity {
+    padding: 10px;
+    margin: 0;
+    font-size: 20px;
+    margin-top: -15%;
+    margin-left: 23%;
+    color: whitesmoke;
+    background-color: rgb(59, 64, 69);
+    border-radius: 9px;
 }
 .Des {
     color: whitesmoke;
@@ -29,4 +34,7 @@ html {
 .footer {
     color: whitesmoke;
     margin-top: 250px;
+}
+.end {
+    color: whitesmoke;
 }

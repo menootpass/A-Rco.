@@ -10,96 +10,116 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<!-- Font Google -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@400,500;600;7 00&display=swap"
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@400,500;600;700&display=swap"
 		rel="stylesheet">
-		<style>
+	<style>
+		* {
+			margin: 0;
+			box-sizing: border-box;
+			outline: none;
+		}
 
-			body {
-				font-family: 'Montserrat', sans-serif;
-				overflow-x: hidden;
-				padding: 100px;
-			}
-			img {
-				width: 100%;
-			}
-			.cards {
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-				flex-wrap: wrap;
-			}
-			.card{
-				position: relative;
-				width: 408px;
-				padding-bottom: 50px;
-				background-color: #fff;
-				box-shadow: 0 21px 35px rgb(0 0 0 / .10);
-				border-radius: 6;
-			}
-			.card .text {
-				padding: 15px;
-			}
-			.card p{
-				font-size: 16px;
-				line-height: 30px;
-			}
-			.card h2{font-size: 32px;
-				margin-bottom: 20px;
-			}
-			.card .more-btn {
-				width: 100px;
-				height: 100px;
-				background-color: #ea7f04;
-				border-radius: 50%;
-				position: absolute;
-				bottom: -60px;
-				left: 0;
-				right: 0;
-				margin: 0 auto;
-				text-align: center;
-				line-height: 60px;
-				color: #fff;
-				cursor: pointer;
-				z-index: 9;
-				font-size: 20px;
-				transition: all ease 0.5s;
-			}
-			.card .more-btn:hover {
-				background-color: #f7f7f7;
-				color: #ea7f04;
-			}
+		body {
+			font-family: 'Montserrat', sans-serif;
+			overflow-x: hidden;
+			padding: 100px;
+		}
 
-			.more-text {
-				position: absolute;
-				bottom: -100%;
-				left: 0;
-				width: 100%;
-				height: 100%;
-				background-color: #ff8800;
-				padding: 30px;
-				overflow-y: auto;
-				transition: all ease 0.7s;
-			}
-			.more-text::-webkit-scrollbar{
-				width: 7px;
-				background-color: #b3b3b3;
-			}
-			.more-text::-webkit-scrollbar-thumb {
-				background-color: #c76d06;
-			}
-			.more-text h2{
-				color: #fff;
-			}
-			.more-text p{
-				color: #fff;
-				font-size: 18px;
-				line-height: 30px;
-				font-weight: 500;
-			}
-			.more-text.active{
-				bottom: 0;
-			}
-		</style>
+		img {
+			width: 100%;
+		}
+
+		.cards {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+
+		.card {
+			position: relative;
+			width: 408px;
+			padding-bottom: 50px;
+			background-color: #fff;
+			box-shadow: 0 21px 35px rgb(0 0 0 / .10);
+			border-radius: 6px;
+			overflow: hidden;
+		}
+
+		.card .text {
+			padding: 15px;
+		}
+
+		.card p {
+			font-size: 16px;
+			line-height: 30px;
+		}
+
+		.card h2 {
+			font-size: 32px;
+			margin-bottom: 20px;
+		}
+
+		.card .more-btn {
+			width: 100px;
+			height: 100px;
+			background-color: #ea7f04;
+			border-radius: 50%;
+			position: absolute;
+			bottom: -60px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			text-align: center;
+			line-height: 60px;
+			color: #fff;
+			cursor: pointer;
+			z-index: 9;
+			font-size: 20px;
+			transition: all ease 0.5s;
+		}
+
+		.card .more-btn:hover {
+			background-color: #f7f7f7;
+			color: #ea7f04;
+		}
+
+		.more-text {
+			position: absolute;
+			bottom: -100%;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #ff8800;
+			padding: 30px;
+			overflow-y: auto;
+			transition: all ease 0.7s;
+		}
+
+		.more-text::-webkit-scrollbar {
+			width: 7px;
+			background-color: #b3b3b3;
+		}
+
+		.more-text::-webkit-scrollbar-thumb {
+			background-color: #c76d06;
+		}
+
+		.more-text h2 {
+			color: #fff;
+		}
+
+		.more-text p {
+			color: #fff;
+			font-size: 18px;
+			line-height: 30px;
+			font-weight: 500;
+		}
+
+		.more-text.active {
+			bottom: 0;
+		}
+	</style>
 
 
 </head>
@@ -109,15 +129,16 @@
 		<!-- NAVIGATION BAR -->
 		<div class="Bio">
 			<div class="Top">
-				<h1 style=" margin-left:50px;"> ABOUT ME?</h1>
+				<h1 style=" margin-left:-5%;"> Rafa Putra Witata</h1>
 			</div>
-			<img src="alpha male.jpg" style="height: 50%; width:40%; margin-top: 5x; margin-left: 50px;">
+			<img src="alpha male.jpg" style="height: 50%; width:25%; margin-top: 5x; margin-left: -5%;">
 			<div class="Identity">
-				<h6>Name : Rafa Putra Witata</h6>
-				<h6>Class : XII MIPA 6</h6>
-				<h6>Age : 17</h6>
-				<h6>Gender : Male</h6>
-				<h6>School : SMA N 1 Sewon</h6>
+				<p>Hello, let me introduce myself</p>
+				<p>My name is Rafa Putra Witata, usually called Rafa, I am a student of SMA N 1 Sewon</p>
+				<p>I live in the Special Region of Yogyakarta, more precisely in Sewon.</p>
+				<div class="down">
+					<p style="margin-top:5%;">Look below if you want to know more about me</p>
+				</div>
 			</div>
 		</div>
 		<!-- <NAVIGATION BAR SELESAI -->
@@ -125,66 +146,61 @@
 		<!-- CONTENT 1 -->
 		<h1 style="color: whitesmoke; margin-top: 300px;">What Do You Want To Know?</h1>
 		<hs></hs>
-	<div class="wrapper">
-		<div class="cards">
-			<div class="card">
-				<div class="img">
-					<img src="school.jpg" alt="">
-				</div>
-				<div class="text">
-					<h2>School</h2>
-					<p>SMA : SMA N 1 Sewon</p>
-					<p>SMP : SMP N 3 Sewon</p>
-					<p>SD : SDN 1 Bantul</p>
-					<div class="more-btn">
-						<i class="fa fa-plus"></i>
+		<div class="wrapper">
+			<div class="cards">
+				<div class="card">
+					<div class="img">
+						<img src="alpha male.jpg" alt="">
+					</div>
+					<div class="text">
+						<h2>School</h2>
+						<p>It's about my school then and my school now</p>
+						<div class="more-btn">
+							<i class="fa fa-plus"></i>
+						</div>
+					</div>
+					<div class="more-text">
+						<p>I used to study at SD 1 Bantul then I continued my education at SMP 3 Sewon and now I am
+							studying at SMA 1 Sewon</p>
 					</div>
 				</div>
-				<div class="more-text">
-					<h2>Hobby</h2>
-					<p>Programming, Playing Game, Swimming, Playing Volly, Sleeping</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="img">
-					<img src="alpha male.jpg" alt="">
-				</div>
-				<div class="text">
-					<h2>School</h2>
-					<p>SMA : SMA N 1 Sewon</p>
-					<p>SMP : SMP N 3 Sewon</p>
-					<p>SD : SDN 1 Bantul</p>
-					<div class="more-btn">
-						<i class="fa fa-plus"></i>
+				<div class="card">
+					<div class="img">
+						<img src="alpha male.jpg" alt="">
+					</div>
+					<div class="text">
+						<h2>Hobby</h2>
+						<p>Here are some things i like to do in my free time</p>
+						<div class="more-btn">
+							<i class="fa fa-plus"></i>
+						</div>
+					</div>
+					<div class="more-text">
+						<p>when i have some free time i like to play guitar, play games, learn programming, sometimes i
+							also swim and play volleyball, and some physical sports</p>
 					</div>
 				</div>
-				<div class="more-text">
-					<h2>Hobby</h2>
-					<p>Programming, Playing Game, Swimming, Playing Volly, Sleeping</p>
-				</div>
-			</div>
-			<div class="card">
-				<div class="img">
-					<img src="alpha male.jpg" alt="">
-				</div>
-				<div class="text">
-					<h2>School</h2>
-					<p>SMA : SMA N 1 Sewon</p>
-					<p>SMP : SMP N 3 Sewon</p>
-					<p>SD : SDN 1 Bantul</p>
-					<div class="more-btn">
-						<i class="fa fa-plus"></i>
+				<div class="card">
+					<div class="img">
+						<img src="alpha male.jpg" alt="">
 					</div>
-				</div>
-				<div class="more-text">
-					<h2>Hobby</h2>
-					<p>Programming, Playing Game, Swimming, Playing Volly, Sleeping</p>
+					<div class="text">
+						<h2>Social Media</h2>
+						<p>Here are some of my social media that you might want to follow</p>
+						<div class="more-btn">
+							<i class="fa fa-plus"></i>
+						</div>
+					</div>
+					<div class="more-text">
+						<p>Instagram : <a href="https://www.instagram.com/_rafaputraa/" style="color: white;">@_rafaputraa</a></p>
+						<p>Twitter : <a href="https://twitter.com/MakeItRapp" style="color: white;">@MakeItRapp</a></p>
+						<p>Facebook : <a href="https://www.facebook.com/rapp.rapp.58323" style="color: white;">@Rapp</a></p>
+						<p>Click the link above to visit my social media quickly</p>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 		<!-- CONTENT 1 END -->
-
 		<!-- FOOTER -->
 
 		<div class="footer">
@@ -219,6 +235,8 @@
 					</div>
 					<div class="col">
 						<p>Thanks for coming
+							<p>Don't forget to check my friend work</p>
+							<p>Click <a href="/ary/index.html" style="color: white;"> here </a> to go to my friend work</p>
 							<hr> now give me money
 						</p>
 					</div>
@@ -230,9 +248,9 @@
 
 		<script>
 
-			$(document).ready(function(){
-				$(".more-btn").on('click', function(){
-					$(this).parent().parent.find(".more-text").toggleClass("active");
+			$(document).ready(function () {
+				$(".more-btn").on('click', function () {
+					$(this).parent().parent().find(".more-text").toggleClass("active");
 				});
 			});
 		</script>
